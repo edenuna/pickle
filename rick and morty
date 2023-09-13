@@ -1,5 +1,4 @@
-print("rick and morty")
-print("Hagit,Netanta")
-print("dog")
-print("cow")
-print("duck")
+print(" Hello Enter your  name: ")
+print(" Hello Enter your adress: ")
+name = "Name"
+print(" Hello " , name ," How are you: " )
