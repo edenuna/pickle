@@ -1,4 +1,4 @@
-print("ri
+print("rick and morty")
 
 # advanced exercise 1:
 def fit_in_box(closet, box):
