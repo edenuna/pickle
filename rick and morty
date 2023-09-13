@@ -1,0 +1,42 @@
+# advanced exercise 1:
+def fit_in_box(closet, box):
+    return closet[0] <= box[0] and closet[1] <= box[1] and closet[2] <= box[2]
+
+
+def get_size(box):
+    return box[0] * box[1] * box[2]
+
+
+def fit_boxes_to_closets(closets, boxes):
+    fitting_boxes = []
+    for closet in closets:
+        best_box = -1
+        for box_idx in range(len(boxes)):
+            if fit_in_box(closet, boxes[box_idx]):
+                if best_box == -1 or get_size(boxes[best_box]) > get_size(
+                        boxes[box_idx]):
+                    best_box = box_idx
+        fitting_boxes.append(best_box)
+    return fitting_boxes
+
+
+def get_measures():
+    width = int(input("width:"))
+    height = int(input("height:"))
+    depth = int(input("depth:"))
+    return width, height, depth
+
+
+def adv_ex_1():
+    num_of_closets = int(input("Hi. How many closets do we have?"))
+    num_of_boxes = int(input("And how many boxes?"))
+    closets = []
+    boxes = []
+    for i in range(num_of_closets):
+        print("closet", i + 1)
+        closets.append(get_measures())
+    for i in range(num_of_boxes):
+        print("box", i + 1)
+        boxes.append(get_measures())
+    return fit_boxes_to_closets(closets, boxes)
+# print(adv_ex_1())
