@@ -1,4 +1,4 @@
-print(" Hello Enter your  name: ")
-print(" Hello Enter your adress: ")
-name = "Name"
-print(" Hello " , name ," How are you: " )
+print("Hello Enter your  name: Hagit")
+print("Hello Enter your address: Netanya ")
+name = "Hagit"
+print(" Hello " , name ," How are you: ")
