@@ -1,3 +1,5 @@
+print("ri
+
 # advanced exercise 1:
 def fit_in_box(closet, box):
     return closet[0] <= box[0] and closet[1] <= box[1] and closet[2] <= box[2]
